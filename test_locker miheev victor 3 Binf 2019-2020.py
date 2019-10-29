@@ -17,6 +17,8 @@ def create_locker(number):
     elif number == 7:
         return Locker("Atrio piano terra",160,180,50,"metallo blindato",7)
 
+
+
 def test_name():
     locker = create_locker(1)
     assert locker.position == "Corridorio piano terra"
@@ -49,7 +51,7 @@ def test_bulky_1():
     # allora il locker è ingombrante
     locker = create_locker(1)
     assert locker.is_bulky == True
-
+    
 def test_bulky_2():
     locker = create_locker(2)
     assert locker.is_bulky == False
